@@ -1,6 +1,6 @@
 services:
-  udemy-downloader:
-    image: udemy-downloader:latest
+  edumy-downloader:
+    image: edumy-downloader:latest
     build:
       context: .
       dockerfile: Dockerfile
