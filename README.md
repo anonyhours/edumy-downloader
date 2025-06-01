@@ -71,7 +71,7 @@ Una vez instalado los requisitos de Git y Docker decargamos o clonamos el reposi
 ```bash
 git clone https://github.com/anonyhours/edumy-downloader.git
 ```
-    -   Entramos en el repositorio clonado.
+Entramos en el repositorio clonado.
 ```bash
 cd edumy-downloader
 ```
