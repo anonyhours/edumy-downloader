@@ -53,7 +53,8 @@ Una vez ejecutado el script. El curso se descargará en `out_dir`.
 
 ## Ejemplo/instrucciones de instalacion en Windows mediande Docker
 
-Requisistos
+🧰 Requisitos Previos
+
 - [Git] Tener previamente instlado git o instalarlo mediante powershell:
 ```bash
 # Sera necesario reinicar visual studio code luego de la instalacion
