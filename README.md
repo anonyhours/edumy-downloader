@@ -122,6 +122,13 @@ uso: main.py [-h] -c COURSE_URL [-b BEARER_TOKEN] [-q QUALITY] [-l LANG] [-cd CO
 
 Si necesitas ayuda para usar el programa, [Discord] anonyhours server or use [GitHub Issues](https://github.com/anonyhours/edumy-downloader/issues)
 
+# Donaciones
+Si alguno de mis proyectos, tutoriales o contribuciones te ha sido útil, considera hacer una donación. Tu apoyo me motiva a seguir mejorando, creando contenido y ayudando a otros desarrolladores.
+
+🙏 ¡Gracias por tu apoyo!
+
+☕ Puedes invitarme a un café o contribuir a través de [https://buymeacoffee.com/ariellontew].
+
 # Créditos
 -   https://github.com/Puyodead1/udemy-downloader - Por el código original en el que se basa este proyecto
 
