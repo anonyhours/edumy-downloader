@@ -92,45 +92,6 @@ uso: main.py [-h] -c COURSE_URL [-b BEARER_TOKEN] [-q QUALITY] [-l LANG] [-cd CO
                [--use-nvenc] [--out OUT] [--continue-lecture-numbers]
                [--chapter CHAPTER_FILTER_RAW]
 
-Udemy Downloader
-
-opciones:
-  -h, --help            muestra este mensaje de ayuda y sale
-  -c COURSE_URL, --course-url COURSE_URL
-                        La URL del curso a descargar
-  -b BEARER_TOKEN, --bearer BEARER_TOKEN
-                        El token de portador a usar
-  -q QUALITY, --quality QUALITY
-                        Descargar una calidad de video específica. Si la calidad solicitada no está disponible, se usará la calidad más cercana. Si no se especifica, se descargará la mejor calidad para cada lección
-  -l LANG, --lang LANG  El idioma para descargar los subtítulos, especifica 'all' para descargar todos los subtítulos (Por defecto es 'en')
-  -cd CONCURRENT_DOWNLOADS, --concurrent-downloads CONCURRENT_DOWNLOADS
-                        El número máximo de descargas concurrentes para segmentos (HLS y DASH, debe ser un número entre 1-30)
-  --skip-lectures       Si se especifica, no se descargarán las lecciones
-  --download-assets     Si se especifica, se descargarán los recursos de las lecciones
-  --download-captions   Si se especifica, se descargarán los subtítulos
-  --download-quizzes    Si se especifica, se descargarán los cuestionarios
-  --keep-vtt            Si se especifica, no se eliminarán los archivos .vtt
-  --skip-hls            Si se especifica, se omitirán las transmisiones HLS (obtención más rápida) (las transmisiones HLS generalmente contienen calidad 1080p para lecciones sin DRM)
-  --info                Si se especifica, solo se imprimirá la información del curso, no se descargará nada
-  --id-as-course-name   Si se especifica, el ID del curso se usará en lugar del nombre del curso para el directorio de salida. Esto es un 'hack' para reducir la longitud de la ruta
-  -sc, --subscription-course
-                        Marcar el curso como un curso basado en suscripción, usa esto si tienes problemas con la detección automática del programa
-  --save-to-file        Si se especifica, el contenido del curso se guardará en un archivo que puede cargarse más tarde con --load-from-file, esto puede reducir el tiempo de procesamiento (Nota que los enlaces a los recursos expiran después de cierto tiempo)
-  --load-from-file      Si se especifica, el contenido del curso se cargará desde un archivo guardado previamente con --save-to-file, esto puede reducir el tiempo de procesamiento (Nota que los enlaces a los recursos expiran después de cierto tiempo)
-  --log-level LOG_LEVEL
-                        Nivel de registro: uno de DEBUG, INFO, ERROR, WARNING, CRITICAL (Por defecto es INFO)
-  --browser {chrome,firefox,opera,edge,brave,chromium,vivaldi,safari}
-                        El navegador del cual extraer las cookies
-  --use-h265            Si se especifica, los videos se codificarán con el códec H.265
-  --h265-crf H265_CRF   Establecer un valor CRF personalizado para la codificación H.265. El valor predeterminado de FFMPEG es 28
-  --h265-preset H265_PRESET
-                        Establecer un valor de preset personalizado para la codificación H.265. El valor predeterminado de FFMPEG es medium
-  --use-nvenc           Usar la transcodificación por hardware de NVIDIA para H.265. Solo funciona si tienes una GPU NVIDIA compatible y ffmpeg con soporte nvenc
-  --out OUT, -o OUT     Establecer la ruta al directorio de salida
-  --continue-lecture-numbers, -n
-                        Usar numeración continua de lecciones en lugar de por capítulo
-  --chapter CHAPTER_FILTER_RAW
-                        Descargar capítulos específicos. Usar valores separados por comas y rangos (ej. '1,3-5,7,9-11')
 
 # Support
 
