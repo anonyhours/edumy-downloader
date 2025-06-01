@@ -76,6 +76,12 @@ Entramos en el repositorio clonado.
 cd edumy-downloader
 ```
 
+-   📚 Instalacion extension en chrome
+    -   En Chrome, ve a chrome://extensions/
+    -   Activa "Modo desarrollador"
+    -   Haz clic en "Cargar descomprimida" o "Load unpacked" y selecciona la carpeta extension dentro del repositorio descargado
+
+
 -   🐳 Construir la Imagen Docker
 Dentro del directorio del repositorio clonado, ejecuta el siguiente comando para construir la imagen Docker:
 
@@ -83,20 +89,14 @@ Dentro del directorio del repositorio clonado, ejecuta el siguiente comando para
 docker build -t edumy-downloader .
 ```
 
-## Instalacion extension para extraer {ACCESS_TOKEN}
--   Instrucciones de instalación:
-    -   En Chrome, ve a chrome://extensions/
-    -   Activa "Modo desarrollador"
-    -   Haz clic en "Cargar descomprimida" o "Load unpacked" y selecciona la carpeta extension dentro del repositorio descargado
-
 -   🚀 Ejecutar el Contenedor Docker
-    -   Una vez configurados los archivos necesarios, puedes ejecutar el contenedor Docker con el siguiente comando:
+    -   Una vez configurados los archivos necesarios, puedes ejecutar el contenedor Docker con los siguiente ejemplos:
 
 ### Ejemplos básicos
 
 ```bash
 # Descargar curso con token
-python main.py -c https://www.udemy.com/course/curso-ejemplo -b TU_TOKEN
+python main.py -c {URL-CURSO} -b {ACCESS_TOKEN}
 
 # Uso mediante docker en cmd
 docker run --rm -it -v "%cd%:/app" {DIR} python main.py -c {URL-CURSO} -b {ACCESS_TOKEN}
