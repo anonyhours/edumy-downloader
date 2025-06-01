@@ -53,8 +53,7 @@ Una vez ejecutado el script. El curso se descargará en `out_dir`.
 
 ## Ejemplo/instrucciones de instalacion en Windows mediande Docker
 
-🧰 Requisitos Previos
-
+Requisistos
 - [Git] Tener previamente instlado git o instalarlo mediante powershell:
 ```bash
 # Sera necesario reinicar visual studio code luego de la instalacion
@@ -66,23 +65,32 @@ git --version
 
 Una vez instalado los requisitos de Git y Docker decargamos o clonamos el repositorio:
 
-📦 Clonar el Repositorio
-    1. Abre una terminal (CMD o PowerShell) y navega al directorio donde deseas clonar el repositorio.
-    2. Clona el repositorio de GitHub:
+-   📦 Clonar el Repositorio
+    -   Abre una terminal (CMD o PowerShell) y navega al directorio donde deseas clonar el repositorio.
+    -   Clona el repositorio de GitHub:
 ```bash
 git clone https://github.com/anonyhours/edumy-downloader.git
+```
+    -   Entramos en el repositorio clonado.
+```bash
 cd edumy-downloader
 ```
 
-🐳 Construir la Imagen Docker
+-   🐳 Construir la Imagen Docker
 Dentro del directorio del repositorio clonado, ejecuta el siguiente comando para construir la imagen Docker:
 
 ```bash
 docker build -t edumy-downloader .
 ```
 
-🚀 Ejecutar el Contenedor Docker
-Una vez configurados los archivos necesarios, puedes ejecutar el contenedor Docker con el siguiente comando:
+## Instalacion extension para extraer {ACCESS_TOKEN}
+-   Instrucciones de instalación:
+    -   En Chrome, ve a chrome://extensions/
+    -   Activa "Modo desarrollador"
+    -   Haz clic en "Cargar descomprimida" o "Load unpacked" y selecciona la carpeta extension dentro del repositorio descargado
+
+-   🚀 Ejecutar el Contenedor Docker
+    -   Una vez configurados los archivos necesarios, puedes ejecutar el contenedor Docker con el siguiente comando:
 
 ### Ejemplos básicos
 
